@@ -16,7 +16,7 @@ import { AuthContext } from "../AuthContext";
 export default function Dashboard() {
     const { userInfo, fetchUserInfo } = useContext(AuthContext);
     const [state, setState] = useState("Welcome")
-    const url = "https://40f8dbed-c644-40a5-9c00-00829d580286-00-k7wgrwzp6mb.pike.replit.dev";
+    const url = import.meta.env.URL;
 
     const [showNewProfile, setShowNewProfile] = useState(false);
     const handleShowNewProfile = () => setShowNewProfile(true);
@@ -34,6 +34,7 @@ export default function Dashboard() {
                 showNewProfile={showNewProfile}
                 handleHideNewProfile={handleHideNewProfile}
                 fetchUserInfo={fetchUserInfo}
+                url={url}
             />
             {userInfo.length <= 0 ? (
                 <Spinner animation="border" className="ms-3 mt-3" variant="primary" />

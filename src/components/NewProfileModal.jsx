@@ -6,8 +6,8 @@ import { storage } from "../firebase";
 import { AuthContext } from "../AuthContext";
 
 
-export default function NewProfileModal({ showNewProfile, handleHideNewProfile, fetchUserInfo }) {
-    const url = "https://40f8dbed-c644-40a5-9c00-00829d580286-00-k7wgrwzp6mb.pike.replit.dev";
+export default function NewProfileModal({ showNewProfile, handleHideNewProfile, fetchUserInfo, url }) {
+    // const url = "https://40f8dbed-c644-40a5-9c00-00829d580286-00-k7wgrwzp6mb.pike.replit.dev";
     const { currentUser } = useContext(AuthContext);
     const [address, setAddress] = useState("");
     const [dob, setDob] = useState("");
