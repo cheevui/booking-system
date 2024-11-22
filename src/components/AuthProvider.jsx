@@ -5,7 +5,7 @@ import { AuthContext } from "../AuthContext";
 
 
 export function AuthProvider({ children }) {
-    const url = import.meta.env.URL;
+    const url = "https://97d4f283-b212-4cd7-88bc-8d2e6dd4fe23-00-214v52zx1yx1w.pike.replit.dev"
     const [currentUser, setCurrentUser] = useState(null);
     const [userInfo, setUserInfo] = useState([]);
     const [loading, setLoading] = useState(true);

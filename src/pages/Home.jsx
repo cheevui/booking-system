@@ -13,7 +13,7 @@ export default function Home() {
     const [password, setPassword] = useState("");
     // const [uid, setUid] = useState("");
     const [show, setShow] = useState(false);
-    const url = import.meta.env.URL;
+    const url = "https://97d4f283-b212-4cd7-88bc-8d2e6dd4fe23-00-214v52zx1yx1w.pike.replit.dev";
     const auth = getAuth();
     const { userInfo, currentUser } = useContext(AuthContext);
     const navigate = useNavigate();
